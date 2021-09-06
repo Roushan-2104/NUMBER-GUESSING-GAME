@@ -18,6 +18,7 @@ let submit = document.getElementById("submit").addEventListener("click", functio
     }
     else if (num=="") {
         result.innerText="";
+        step=0;
     }
     else{
         result.classList.add("animation1");  
