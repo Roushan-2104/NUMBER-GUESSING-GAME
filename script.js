@@ -30,5 +30,6 @@ let submit = document.getElementById("submit").addEventListener("click", functio
 });
 let reset = document.getElementById("reset-btn").addEventListener("click" , function () {
     result.innerText = " ";
+    step=0;
 })
  
