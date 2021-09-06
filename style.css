@@ -12,14 +12,13 @@ div {
 }
 h1 {
   font-size: 30px;
-  display:inline-block;
   font-family: "Courier New", Courier, monospace;
   font-weight: normal;
   border-bottom: 2px solid whitesmoke;
   margin: 30px auto;
   padding-bottom: 10px;
   text-align: center;
-  width: 350px;
+  width: 550px;
 }
 input[type="number"] {
   margin: 20px;
