@@ -3,7 +3,7 @@ var result = document.getElementById("result");
 let submit = document.getElementById("submit").addEventListener("click", function () {
     step++;
     let num = document.getElementById("num").value;
-    const random = Math.round(Math.random()*10);
+    const random = Math.ceil(Math.random()*10);
     if (num == random) {
         result.classList.add("animation2");
         result.style.color="aquamarine";
