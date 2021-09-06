@@ -10,10 +10,11 @@ let submit = document.getElementById("submit").addEventListener("click", functio
         result.style.fontSize = "60px";
         result.innerText =  "The NUMBER IS "+ random + ", YOU GUESSED IT RIGHT ," + " It Took " + step + " Steps !!";
         step = 0;
-        setTimeout(function() {
+        setTimeout(()=> { 
+            document.getElementById("form").reset();
             result.classList.remove("animation2");
         }, 400);
-
+ 
     }
     else if (num=="") {
         result.innerText="";
@@ -23,10 +24,11 @@ let submit = document.getElementById("submit").addEventListener("click", functio
         result.style.color= "red";
         result.innerText = "The NUMBER IS "+random+" ,TRY AGAIN !!";
         setTimeout(function() {
-            result.classList.remove("animation1");
+           document.getElementById("form").reset(); result.classList.remove("animation1");
         }, 100);
     }
 });
-let reset = document.getElementById("reset").addEventListener("click" , function () {
+let reset = document.getElementById("reset-btn").addEventListener("click" , function () {
     result.innerText = " ";
 })
+ 
